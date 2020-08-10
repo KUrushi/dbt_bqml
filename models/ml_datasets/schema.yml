@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: datasets
+    description: 訓練用のデータセッt
+
+    columns:
+      - name: store_number
+        description: 店舗番号
+        tests:
+          - not_null
+
+      - name: sales_year
+        description: 年
+        tests:
+          - not_null
+    
+      - name: sales_month
+        description: 月
+        tests:
+          - not_null
+    
