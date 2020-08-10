@@ -1,5 +1,5 @@
 {% macro train_dnn() %}
-CREATE MODEL IF NOT EXISTS{{target.schema}}.dnn_regressor
+CREATE MODEL IF NOT EXISTS {{target.schema}}.dnn_regressor
 OPTIONS(
     MODEL_TYPE = "DNN_REGRESSOR",
     BATCH_SIZE=128,
